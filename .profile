@@ -30,11 +30,11 @@ alias mcct3='ssh -Y mcct03.cos.lrz.de'
 alias mcct4='ssh -Y mcct04.cos.lrz.de'
 alias ivyinstall='ssh -Y ivy-devel.cos.lrz.de'
 alias test_sklinstall='ssh -Y skngnsr0r2hc01.cos.lrz.de'
-alias wsc20='ssh wsc20.srv.lrz.de'
-alias smng6='skx6.supermuc.lrz.de'
-alias smng='skx.supermuc.lrz.de'
-alias sminstallng='devel.suepermuc.bayern'
-alias smdevel='10.156.196.8' #same as sminstallng
+alias wsc20='ssh -Y wsc20.srv.lrz.de'
+alias smng6='ssh -Y skx6.supermuc.lrz.de'
+alias smng='ssh -Y skx.supermuc.lrz.de'
+alias sminstallng='ssh -Y devel.suepermuc.bayern'
+alias smdevel='ssh -Y 10.156.196.8' #same as sminstallng
 
 # --------------
 # alias basic
