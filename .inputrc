@@ -1,0 +1,22 @@
+# Incremental searching with Up and Down. Type 'ssh <up>'
+#"\e[A": history-search-backward
+"\C-p": history-search-backward
+#"\e[B": history-search-forward
+"\C-n": history-search-forward
+#"\e[C": forward-char
+#"\e[D": backward-char
+set show-all-if-ambiguous on
+set completion-ignore-case on
+#TAB: menu-complete
+
+
+# Color files by types
+ set colored-stats On
+# Append char to indicate type
+ set visible-stats On
+# Mark symlinked directories
+ set mark-symlinked-directories On
+# Color the common prefix
+ set colored-completion-prefix On
+# Color the common prefix in menu-complete
+ set menu-complete-display-prefix On
