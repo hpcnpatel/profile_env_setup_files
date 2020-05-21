@@ -1,5 +1,7 @@
 #! .profile file for a linux env
 
+test -s ~/.alias && . ~/.alias || true
+
 #   Change Prompt
 #   ------------------------------------------------------------
 ##   export PS1="______________________\n| \w @ \h (\u) \n| => "
