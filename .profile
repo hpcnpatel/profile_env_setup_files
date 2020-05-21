@@ -32,6 +32,10 @@ shopt -s histappend
 export HISTCONTROL=erasedups    
 
 # --------------
+#git alias
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+# --------------
+# --------------
 # alias for CLusters and Supercomputers
 # LRZ specific
 # --------------

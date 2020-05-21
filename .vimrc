@@ -74,15 +74,15 @@ hi Function term=underline cterm=bold ctermfg=LightGray
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
 
-set pastetoggle=<F2>  "temporarily switch to paste mode
+"set pastetoggle=<F2>  "temporarily switch to paste mode
 
 "colorscheme github
 "colorscheme desert
 "colorscheme jellybeans
-colorscheme PaperColor
+"colorscheme PaperColor
 "set background=dark " Light theme is used by default
-set background=light " Light theme is used by default
-set t_Co=256        " Turn on if using PaperColor 
+"set background=light " Light theme is used by default
+"set t_Co=256        " Turn on if using PaperColor 
 
 " Taglist script is added and it is a source code browser for Vim which provides
 " strucutres of source code files and allows one to efficiently brows through
