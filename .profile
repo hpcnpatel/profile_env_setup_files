@@ -32,42 +32,6 @@ shopt -s histappend
 export HISTCONTROL=erasedups    
 
 # --------------
-#git alias
-alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
-# --------------
-# --------------
-# alias for CLusters and Supercomputers
-# LRZ specific
-# --------------
-#Login nodes
-alias cm21='lxlogin1.lrz.de'
-alias cm22='lxlogin2.lrz.de'
-alias cm23='lxlogin3.lrz.de'
-alias cm24='lxlogin4.lrz.de'
-alias cm38='lxlogin8.lrz.de'
-alias im10='lxlogin10.lrz.de'
-#Development nodes
-alias sminstall2='ssh -Y install2.smuc.lrz.de'
-alias sminstall1='ssh -Y install.smuc.lrz.de'
-alias cm2devel='cm2devel.cos.lrz.de'
-alias cm3devel='mcct03.cos.lrz.de'
-alias mcct4='mcct04.cos.lrz.de'
-alias ivydevel='ivy-devel.cos.lrz.de'
-alias wsc20='wsc20.srv.lrz.de'
-alias wsc40='wsc40.srv.lrz.de'
-alias smng6='skx6.supermuc.lrz.de'
-alias smng='skx.supermuc.lrz.de'
-alias sminstall='devel.supermuc.bayern'
-alias smdevel='10.156.196.8' #same as sminstallng
-
-# --------------
-# alias basic
-# --------------
-alias cp='cp -iv'                           # Preferred 'cp' implementation
-alias mv='mv -iv'                           # Preferred 'mv' implementation
-alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -latr'                         # Preferred 'ls' implementation
-alias l='ls -ltr'                           # Preferred 'll' implementation
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
     extract () {
