@@ -1,6 +1,30 @@
 #! .profile file for a linux env
 
+#   Change Prompt
+#   ------------------------------------------------------------
+##   export PS1="______________________\n| \w @ \h (\u) \n| => "
+##    export PS2="| => "
 
+#   Set Default Editor (change 'vim' to the editor of your choice)
+#   ------------------------------------------------------------
+#    export EDITOR=/usr/local/bin/atom
+
+#   Set default blocksize for ls, df, du
+#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
+#   ------------------------------------------------------------
+    export BLOCKSIZE=1k
+
+#   Add color to terminal
+#   from http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+#   ------------------------------------------------------------
+# for light colors   
+   export CLICOLOR=1
+   export LSCOLORS=ExFxBxDxCxegedabagacad
+# for dark colors   
+#   export CLICOLOR=1
+#   export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 export HISTFILESIZE=900000
 export HISTSIZE=900000
@@ -12,29 +36,25 @@ export HISTCONTROL=erasedups
 # LRZ specific
 # --------------
 #Login nodes
-alias smsb='ssh -Y sb.supermuc.lrz.de'
-alias smwm='ssh -Y wm.supermuc.lrz.de'
-alias smhw='ssh -Y hw.supermuc.lrz.de'
-alias cm25='ssh -Y lxlogin5.lrz.de'
-alias cm26='ssh -Y lxlogin6.lrz.de'
-alias cm27='ssh -Y lxlogin7.lrz.de'
-alias cm38='ssh -Y lxlogin8.lrz.de'
-alias im10='ssh -Y lxlogin10.lrz.de'
-#alias im10='ssh -Y ivy-login.cos.lrz.de'
+alias cm21='lxlogin1.lrz.de'
+alias cm22='lxlogin2.lrz.de'
+alias cm23='lxlogin3.lrz.de'
+alias cm24='lxlogin4.lrz.de'
+alias cm38='lxlogin8.lrz.de'
+alias im10='lxlogin10.lrz.de'
 #Development nodes
 alias sminstall2='ssh -Y install2.smuc.lrz.de'
 alias sminstall1='ssh -Y install.smuc.lrz.de'
-alias mpp2='ssh -Y mpp2-devel.cos.lrz.de'
-alias mpp3='ssh -Y mcct03.cos.lrz.de'
-alias mcct3='ssh -Y mcct03.cos.lrz.de'
-alias mcct4='ssh -Y mcct04.cos.lrz.de'
-alias ivyinstall='ssh -Y ivy-devel.cos.lrz.de'
-alias test_sklinstall='ssh -Y skngnsr0r2hc01.cos.lrz.de'
-alias wsc20='ssh -Y wsc20.srv.lrz.de'
-alias smng6='ssh -Y skx6.supermuc.lrz.de'
-alias smng='ssh -Y skx.supermuc.lrz.de'
-alias sminstallng='ssh -Y devel.suepermuc.bayern'
-alias smdevel='ssh -Y 10.156.196.8' #same as sminstallng
+alias cm2devel='cm2devel.cos.lrz.de'
+alias cm3devel='mcct03.cos.lrz.de'
+alias mcct4='mcct04.cos.lrz.de'
+alias ivydevel='ivy-devel.cos.lrz.de'
+alias wsc20='wsc20.srv.lrz.de'
+alias wsc40='wsc40.srv.lrz.de'
+alias smng6='skx6.supermuc.lrz.de'
+alias smng='skx.supermuc.lrz.de'
+alias sminstall='devel.supermuc.bayern'
+alias smdevel='10.156.196.8' #same as sminstallng
 
 # --------------
 # alias basic
@@ -42,8 +62,9 @@ alias smdevel='ssh -Y 10.156.196.8' #same as sminstallng
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -lhArtFGlhp'                   # Preferred 'ls' implementation
-alias l='ls -lhrt'                          # Preferred 'll' implementation
+alias ll='ls -latr'                         # Preferred 'ls' implementation
+alias l='ls -ltr'                           # Preferred 'll' implementation
+#   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
     extract () {
         if [ -f $1 ] ; then
