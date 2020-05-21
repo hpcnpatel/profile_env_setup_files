@@ -1,7 +1,22 @@
 #! .profile file for a linux env
 
 test -s ~/.alias && . ~/.alias || true
-
+# --------------
+# alias basic
+# --------------
+alias cp='cp -iv'                           # Preferred 'cp' implementation
+alias mv='mv -iv'                           # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
+alias ll='ls -latr'                         # Preferred 'ls' implementation
+alias l='ls -ltr'                           # Preferred 'll' implementation
+# --------------
+alias Nsinfo="sinfo -a | awk '{print $1,$2,$3,$4,$5}' | column -t"
+# --------------
+#git alias
+# --------------
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+# --------------
+#
 #   Change Prompt
 #   ------------------------------------------------------------
 ##   export PS1="______________________\n| \w @ \h (\u) \n| => "
