@@ -89,3 +89,7 @@ au BufWinEnter * silent loadview
 " code for diff prog languages. 
 " TO use it, type in VIM :Tlist or :helptags
 syntax on
+
+if &diff
+syntax off
+endif

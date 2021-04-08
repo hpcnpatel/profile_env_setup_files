@@ -1,4 +1,9 @@
+# --------------
+#slurm alias
+alias sacctl='sacct --noconvert --format=jobid%-15,Account%10,User%10,MaxRSS%15,MaxRSSNode%15,NCPUS%10,NNodes%10,NTasks%10,Start%20,End%20,State%2'
+alias squeuel='squeue --format="%.18i %.9P %.8j %.8u %.7D %21R %.10T %.25V %.15l %.15L %.15M %.23S %23e %.10p"'
 alias Nsinfo="sinfo -a | awk '{print $1,$2,$3,$4,$5}' | column -t"
+
 # --------------
 #git alias
 alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
