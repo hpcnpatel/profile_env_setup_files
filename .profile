@@ -4,8 +4,8 @@ test -s ~/.alias && . ~/.alias || true
 # --------------
 # alias basic
 # --------------
-alias cp='cp -iv'                           # Preferred 'cp' implementation
-alias mv='mv -iv'                           # Preferred 'mv' implementation
+alias cp='cp -v'                           # Preferred 'cp' implementation
+alias mv='mv -v'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -latr'                         # Preferred 'ls' implementation
 alias l='ls -ltr'                           # Preferred 'll' implementation
