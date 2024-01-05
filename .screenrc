@@ -1,0 +1,14 @@
+hardstatus alwayslastline "%{=b}%{G} Session: %S, Screen(s): %{b}%w %=%{kG}%C%A  %D, %M/%d/%Y "
+#hardstatus alwayslastline
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'  
+startup_message on
+msgwait 1
+##    Keybindings    ##
+## bind <F7> to detach screen from this terminal
+## bind <F9> to rename an existing window
+## bind <F11> to move to previous window
+## bind <F12> to move to next window
+bindkey -k k7 detach
+bindkey -k k9 title
+bindkey -k F1 prev
+bindkey -k F2 next
